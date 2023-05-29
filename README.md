@@ -50,6 +50,23 @@ In addition to the existing features, there are plans to enhance the application
 - Order Placement: Once the user is ready to proceed with their order, they will be able to place the order securely through the application. The order details will be stored in Firestore for future reference and order management.
 By incorporating these improvements, the application will offer a comprehensive shopping experience with a user-friendly cart section and streamlined order management.
 
+## Project .apk File (link)
+https://drive.google.com/file/d/1YERV9zCXCx22NNsGjLNjEsjoYerFqUz8/view?usp=sharing
+
+
+## Project Video
+https://drive.google.com/file/d/1X0Mcgj6WAUAl_G5P1cMjfNe0nj-Ekvuz/view?usp=sharing
+
+
+## Firestore Database Screenshots
+<img width="960" alt="image" src="https://github.com/itsvinayyay/edutekzila/assets/104484293/01d0f1be-4b43-49a0-a348-2a7938e6da0c">
+<img width="960" alt="image" src="https://github.com/itsvinayyay/edutekzila/assets/104484293/fe1d2fd5-4702-42d4-bba7-215c29dcf03d">
+<img width="960" alt="image" src="https://github.com/itsvinayyay/edutekzila/assets/104484293/28e2b4ce-c354-46b8-b3e1-1425617eca82">
+
+
+
+
+
 ## Installation
 
 1. Clone the repository: `git clone [repository URL]`
@@ -63,4 +80,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-This project is licensed under the [License Name]. [Provide the license details]
+This project is licensed under the NA.
+
+
