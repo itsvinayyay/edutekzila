@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "12698279449",
+    "project_id": "edutek-b2f72",
+    "storage_bucket": "edutek-b2f72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12698279449:android:f772fe7b4f4f6fff2b9488",
+        "android_client_info": {
+          "package_name": "com.example.edutekzila"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN1GzDoWT8De2rJz4wTj1kAgkDZOJxhms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
