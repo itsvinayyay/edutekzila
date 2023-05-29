@@ -64,20 +64,17 @@ class UpperSection extends StatelessWidget {
             height: getproportionatescreenheight(15),
           ),
           Container(
+            alignment: Alignment.centerLeft,
             width: getproportionatescreenwidth(800),
             height: getproportionatescreenheight(50),
             decoration: BoxDecoration(
               color: Color(0xFFF5F4F6),
               borderRadius: BorderRadius.circular(30),
             ),
-            child: TextFormField(
-              decoration: InputDecoration(
-                hintText: "Search your Product",
-                border: OutlineInputBorder(
-                  //TODO needs to be done!
-                ),
-              ),
-            ),
+            child: Text("    Search your product", style: TextStyle(
+              color: Colors.grey,
+              fontSize: 16,
+            ),)
           ),
         ],
       ),

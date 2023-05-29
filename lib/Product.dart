@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Product {
@@ -28,6 +30,21 @@ class Offer {
   late String image_url;
 
   Offer({required this.name, required this.image_url});
+}
+
+class Supplies {
+  late List<String> headings;
+  late List<String> status;
+  late List<String> img_urls;
+  late List<String> dates;
+  late List<String> locations;
+
+  Supplies(
+      {required this.headings,
+      required this.status,
+      required this.img_urls,
+      required this.dates,
+      required this.locations});
 }
 
 class ProductService {
@@ -91,6 +108,20 @@ class ProductService {
     return _firestore.snapshots().map((snapshot) {
       return snapshot.docs.map((doc) {
         return Offer(name: doc['Name'], image_url: doc['ImageURL']);
+      }).toList();
+    });
+  }
+
+  Stream<List<Supplies>> getSuppliesList() {
+    final _firestore = _firebase.collection("SupplyDetails");
+    return _firestore.snapshots().map((snapshot) {
+      return snapshot.docs.map((doc) {
+        return Supplies(
+            headings: List<String>.from(doc['Headings'] ?? []),
+            status: List<String>.from(doc['Status'] ?? []),
+            img_urls: List<String>.from(doc['URLs'] ?? []),
+            dates: List<String>.from(doc['Dates'] ?? []),
+            locations: List<String>.from(doc['Locations'] ?? []));
       }).toList();
     });
   }

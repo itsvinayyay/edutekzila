@@ -19,7 +19,7 @@ class build_BuyButtons extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
             border: Border.all(width: 3, color: Colors.orange),
           ),
-          child: Center(
+          child: const Center(
             child: Text(
               "Add to Cart",
               style: TextStyle(
@@ -30,20 +30,29 @@ class build_BuyButtons extends StatelessWidget {
             ),
           ),
         ),
-        Container(
-          width: MediaQuery.of(context).size.width/2 - 30,
-          height: getproportionatescreenheight(60),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5),
-              color: Colors.orange
-          ),
-          child: Center(
-            child: Text(
-              "Buy Now",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+        GestureDetector(
+          onTap: (){
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Product placed successfully'),
+              ),
+            );
+          },
+          child: Container(
+            width: MediaQuery.of(context).size.width/2 - 30,
+            height: getproportionatescreenheight(60),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.orange
+            ),
+            child: const Center(
+              child: Text(
+                "Buy Now",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
